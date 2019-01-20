@@ -33,6 +33,8 @@ View in browser.
 http://localhost:3000
 ```
 
+## Deploying
+pm2 start app.config.json
 
 ## Built With
 
