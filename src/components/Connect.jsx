@@ -166,7 +166,7 @@ const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress,
         )}
         <Grid item xs={12}><Typography component="br" /></Grid>
         <Grid item xs={3}>
-          <a href='http://dannylim.co/build/DannyLim_Resume.pdf' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-file ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
+          <a href='http://dannylim.co/DannyLim_Resume.pdf' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-file ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
         <Grid item xs={3}>
           <a href='https://github.com/dalime' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-github-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
