@@ -1,0 +1,419 @@
+body {
+  /* background: url('https://www.heet.org.uk/wp-content/uploads/2016/06/cool-background-picture-super-gradient-270582-1.jpg') no-repeat center center fixed; */
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  max-width: 100%;
+}
+
+.section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  opacity: 0.1;
+}
+
+.sectionView {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  opacity: 1;
+}
+
+.splashContainer {
+  /* display: flex; */
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.splashText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashTextSm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.splashLogo {
+  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#experienceRoot {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home {
+  width: 50%;
+  height: 100vh;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00e676;
+  /* color: #4054b8; */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbarLink {
+  color: white;
+}
+
+.navbarLink:hover {
+  animation-name: hi;
+  animation-duration: 1s;
+  color: #00e676;
+  /* color: #4054b8; */
+  cursor: pointer;
+}
+
+.navbar .navbar-toggle {
+  background-color: #00e676;
+  /* color: #4054b8; */
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+p {
+  color: white;
+}
+
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+
+@keyframes flip {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes spin {
+	0%  {-webkit-transform: rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg);}	
+}
+
+.skillLogo {
+  width: 200%;
+  align-self: center;
+}
+
+
+.skillLogo:hover {
+  -webkit-animation: spin 0.4s linear;
+  align-self: center;
+}
+
+.skillLogo:active {
+  -webkit-animation: spin 0.4s linear;
+  align-self: center;
+}
+
+.projectImg {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.projectImg:hover {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #00e676;
+  box-shadow: 1px 0 1px 0 white;
+  animation-name: borderGreen, enlargeProject;
+  animation-duration: 1s;
+}
+
+.projectImgSm {
+  margin: auto;
+  display: block;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.projectImgSm:hover {
+  width: 70%;
+  border: 4px solid #00e676;
+  box-shadow: 1px 0 1px 0 white;
+  animation-name: borderGreen, enlargeSmProject;
+  animation-duration: 1s;
+}
+
+.projectLink {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.projectLink:hover {
+  animation-name: hi-black;
+  animation-duration: 1s;
+  color: #00e676;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.skillLink h4 {
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+.skillLink:hover h4 {
+  animation-name: hi-black;
+  animation-duration: 1s;
+  color: #00e676;
+  /* color: #4054b8; */
+  text-decoration: none;
+  text-align: left;
+}
+
+.companyTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.companyTitle:hover {
+  font-size: 20px;
+  font-weight: bold;
+  animation-name: hi-black;
+  animation-duration: 1s;
+  color: #00e676;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.connectBtn {
+  color: #212121;
+  margin: 20px;
+}
+
+.connectBtnSm {
+  color: #212121;
+  margin: 10px;
+}
+
+.connectBtn:hover {
+  animation-name: hi-black;
+  animation-duration: 1s;
+  margin: 20px;
+  color: #00e676;
+  /* color: #4054b8; */
+}
+
+.connectBtnSm:hover {
+  animation-name: hi-black;
+  animation-duration: 1s;
+  margin: 10px;
+  color: #00e676;
+  /* color: #4054b8; */
+}
+
+.componentIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+.avatar {
+  border: 1px solid white;
+  box-shadow: 0 0 0px 0px white;
+}
+
+.avatar:hover {
+  border: 4px solid #00e676;
+  box-shadow: 1px 0 1px 0 white;
+  animation-name: borderGreen;
+  animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes borderGreen {
+  from {
+    border: 1px solid white;
+    box-shadow: 0 0 0 0 white;
+  }
+  to {
+    border: 5px solid #00e676;
+    box-shadow: 1px 0 1px 0 white;
+  }
+}
+
+@keyframes enlargeProject {
+  from {
+    width: 80%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes enlargeSmProject {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes hi {
+  from {
+    color: white;
+  }
+  to {
+    color: #00e676;
+    /* color: #4054b8; */
+  }
+}
+
+@keyframes hi-black {
+  from {
+    color: black;
+  }
+  to {
+    color: #00e676;
+    /* color: #4054b8; */
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.resumeBtn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.resumeBtn:hover {
+  animation-name: resumehi;
+  animation-duration: 1s;
+  background-color: #00e676;
+}
+
+@keyframes buttonColor {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: #00e676;
+    /* color: #4054b8; */
+  }
+}
+
+.paper {
+  width: 100%;
+  margin: 5px;
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  box-shadow: 0 0 0px 0px white;
+}
+
+.paper:hover {
+  box-shadow: 0 0 5px 5px white;
+  animation-name: highlight;
+  animation-duration: 1s;
+}
+
+@keyframes highlight {
+  from {
+    border: 1px solid white;
+    box-shadow: 0 0 0px 0px white;
+  }
+  to {
+    border: 1px solid white;
+    box-shadow: 0 0 5px 5px white;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .splashLogo {
+    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+    transform: scale(1.3);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 2736px) {
+  .splashLogo {
+    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+    transform: scale(1.2);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
