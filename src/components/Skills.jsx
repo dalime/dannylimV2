@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import TrackVisibility from 'react-on-screen';
 
-import { SketchLogo, InvisionLogo, ReactLogo, ReactNativeLogo, ReduxLogo, JavaScriptLogo, BootstrapLogo, MaterialUILogo, CSSLogo, HTMLLogo, NodeLogo, ExpressLogo, JavaLogo, GraphQLLogo, SQLLogo, MongoLogo, GitLogo, SVNLogo } from './SkillsLogos';
+import { SketchLogo, InvisionLogo, ReactLogo, ReactNativeLogo, ReduxLogo, JavaScriptLogo, BootstrapLogo, MaterialUILogo, CSSLogo, HTMLLogo, NodeLogo, ExpressLogo, JavaLogo, GraphQLLogo, SQLLogo, MongoLogo, WordPressLogo, SquarespaceLogo, GitLogo, SVNLogo } from './SkillsLogos';
 
 const styles = theme => ({
   skillLogo: {
@@ -52,9 +52,15 @@ const SkillsComponent = ({ isVisible, renderSection, renderSkill, width }) => {
       </Grid>
      
       <Grid container item xs={12} spacing={16}>
-        {renderSection('Database')}
+        {renderSection('Database Management')}
         {renderSkill('SQL', 'https://www.mysql.com/', SQLLogo)}
         {renderSkill('MongoDB', 'https://www.mongodb.com/', MongoLogo)}
+      </Grid>
+
+      <Grid container item xs={12} spacing={16}>
+        {renderSection('Website Builders')}
+        {renderSkill('WordPress', 'https://wordpress.org/', WordPressLogo)}
+        {renderSkill('Squarespace', 'https://www.squarespace.com/', SquarespaceLogo)}
       </Grid>
         
       <Grid container item xs={12} spacing={16}>

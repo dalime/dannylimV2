@@ -14,5 +14,7 @@ export const JavaLogo = require('../images/Java.png');
 export const GraphQLLogo = require('../images/GraphQL.png');
 export const SQLLogo = require('../images/SQL.png');
 export const MongoLogo = require('../images/Mongo.png');
+export const WordPressLogo = require('../images/WordPress.png');
+export const SquarespaceLogo = require('../images/Squarespace.png');
 export const GitLogo = require('../images/Git.png');
 export const SVNLogo = require('../images/SVN.png');
