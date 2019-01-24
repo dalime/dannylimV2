@@ -62,6 +62,20 @@ body {
   background-attachment: fixed;
 }
 
+.splashLogoSm {
+  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
 #experienceRoot {
   -webkit-background-size: cover;
   -moz-background-size: cover;

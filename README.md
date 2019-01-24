@@ -6,7 +6,7 @@ Created with React.js, Node.js, and Material UI
 
 ## Getting Started
 
-To run our repo, run the following in your terminal:
+To run this repo, run the following in your terminal:
 
 Clone.
 
