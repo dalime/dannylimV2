@@ -175,7 +175,7 @@ const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress,
           <a href='https://www.linkedin.com/in/danny-lim-a4839230' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-linkedin-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
         <Grid item xs={3}>
-          <a href='https://www.youtube.com/channel/UCdc4OrEMuzOMo2Ivu8OWbWw' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-youtube ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
+          <a href='https://www.behance.net/DannyBLimb5b0/' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-behance-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
       </Grid>
       
