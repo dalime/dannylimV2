@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Divider from '@material-ui/core/Divider';
 import Splash from './Splash';
 import About from './About';
 import Experience from './Experience';
@@ -14,11 +15,6 @@ const styles = {
         width: '100%',
         backgroundColor: 'white'
     },
-    breakBlack: {
-        height: '4%',
-        width: '100%',
-        backgroundColor: '#eee'
-    }
 }
 
 class Base extends Component {
@@ -26,15 +22,19 @@ class Base extends Component {
         return (
             <div style={{ textAlign: 'center', justifyContent: 'space-evenly' }}>
                 <Splash />
-                <ScrollableAnchor id={'about'}><div style={styles.breakWhite} /></ScrollableAnchor>
+                <ScrollableAnchor id={'about'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <About />
-                <ScrollableAnchor id={'experience'}><div style={styles.breakBlack} /></ScrollableAnchor>
+                <Divider />
+                <ScrollableAnchor id={'experience'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Experience />
-                <ScrollableAnchor id={'skills'}><div style={styles.breakWhite} /></ScrollableAnchor>
+                <Divider />
+                <ScrollableAnchor id={'skills'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Skills />
-                <ScrollableAnchor id={'projects'}><div style={styles.breakBlack} /></ScrollableAnchor>
+                <Divider />
+                <ScrollableAnchor id={'projects'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Projects />
-                <ScrollableAnchor id={'connect'}><div style={styles.breakWhite} /></ScrollableAnchor>
+                <Divider />
+                <ScrollableAnchor id={'connect'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Connect />
             </div>
         );

@@ -70,7 +70,7 @@ class NavBar extends Component {
                         <Typography className="navbarLink" variant="title" onClick={() => {
                             this._push('');
                             this.setState({ menuOpen: false });
-                        }} color="inherit" style={{ marginRight: 20, fontFamily: 'Kaushan Script, cursive', textTransform: 'capitalize', textDecoration: 'none' }}>
+                        }} color="inherit" style={{ marginRight: 20, fontFamily: 'Open Sans, sans-serif', textTransform: 'capitalize', textDecoration: 'none' }}>
                             Danny Lim
                         </Typography>
                     
@@ -108,7 +108,7 @@ class NavBar extends Component {
         return (
             <AppBar position="fixed" className="navBar" style={{ backgroundColor: '#424242' }}>
                 <Toolbar>
-                    <Typography className="navbarLink" variant="title" onClick={this._push.bind(null, '')} color="inherit" style={{ marginRight: 20, fontFamily: 'Kaushan Script, cursive', textTransform: 'capitalize', textDecoration: 'none' }}>
+                    <Typography className="navbarLink" variant="title" onClick={this._push.bind(null, '')} color="inherit" style={{ marginRight: 20, fontFamily: 'Open Sans, sans-serif', textTransform: 'capitalize', textDecoration: 'none' }}>
                         Danny Lim
                     </Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'about')}>About</Typography>

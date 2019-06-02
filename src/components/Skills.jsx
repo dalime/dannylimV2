@@ -22,7 +22,7 @@ const styles = theme => ({
 const SkillsComponent = ({ isVisible, renderSection, renderSkill, width }) => {
   return (
     <div className={isVisible ? "sectionView" : "section"} style={{ paddingLeft: '5%', flexGrow: 1 }}>
-      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
+      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
         My Skills
       </Typography>
       <Grid container item xs={12} spacing={16}>

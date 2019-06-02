@@ -57,13 +57,13 @@ const theme = createMuiTheme({
 const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress, subject, message, error, errorMessage, success, successMessage, loading, buttonClassname, handleChange, submit, width }) => {
   return (
     <div className={isVisible ? "sectionView" : "section"}>
-      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
+      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
         Let's Work Together
       </Typography>
       <Grid container spacing={24}>
         {success ? (
           <Grid item xs={12}>
-            <Typography gutterBottom variant="subheading" component="h3" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: 25 }}>
+            <Typography gutterBottom variant="subheading" component="h3" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: 25 }}>
               {successMessage}
             </Typography>
           </Grid>
@@ -175,7 +175,7 @@ const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress,
           <a href='https://www.linkedin.com/in/danny-lim-a4839230' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-linkedin-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
         <Grid item xs={3}>
-          <a href='https://www.behance.net/DannyBLimb5b0/' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-behance-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
+          <a href='https://www.behance.net/dalime/' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-behance-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
       </Grid>
       

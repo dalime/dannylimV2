@@ -14,7 +14,7 @@ const AboutComponent = ({ isVisible, width }) => {
   return (
     <div style={styles} className={isVisible ? "sectionView" : "section"}>
       {width === 'xs' || width === 'sm' ? <div /> : (
-        <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: 50 }}>
+        <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: 50 }}>
           Nice to Meet You
         </Typography>
       )}
@@ -27,7 +27,7 @@ const AboutComponent = ({ isVisible, width }) => {
               <Avatar className="avatar" src='https://i.imgur.com/EIAwly7.jpg' onClick={() => window.open('https://i.imgur.com/EIAwly7.jpg')} style={{ width: width === 'xs' || width === 'sm' ? 80 : 150, height: width === 'xs' || width === 'sm' ? 80 : 150, textAlign: 'center' }}/>
             </Grid>
             <Grid item xs={8}>
-              <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: 30 }}>
+              <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: 30 }}>
                 Nice to Meet You
               </Typography>
             </Grid>

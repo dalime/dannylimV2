@@ -21,9 +21,9 @@ const styles = theme => ({
 
 const ExperienceComponent = ({ isVisible, classes, renderExperience, width }) => {
   return (
-    <div style={{ position: 'relative', backgroundColor: '#eee' }} className={isVisible ? "sectionView" : "section"}>
+    <div style={{ position: 'relative' }} className={isVisible ? "sectionView" : "section"}>
       <div className={classes.root} id="experienceRoot">
-        <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
+        <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
           My Experiences
         </Typography>
         <Typography component="br" />

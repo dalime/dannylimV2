@@ -9,16 +9,16 @@ const ProjectsView = ({ isVisible, renderProject, width }) => {
   return (
     <div style={{
       flexGrow: 1,
-      backgroundColor: '#eee',
       paddingTop: '2%',
       paddingBottom: '2%',
       paddingRight: width === 'xs' || width === 'sm' ? 0 : '10%'
     }} className={isVisible ? "sectionView" : "section"}>
-      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Kaushan Script, cursive', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
+      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
         What I've Worked On
       </Typography>
       <Typography component="br" />
 
+      {renderProject('https://sidepackstory.com/', 'https://i.imgur.com/zVpX9HF.gif', 'SidepackStory Travel Blog Website', 'WordPress | SketchApp', `Designed mockups for website after discussing with client with Sketch and implemented website with WordPress`, 'https://www.behance.net/gallery/78524837/SidepackStory-Mockups')}
       {renderProject('http://jstbquiz.herokuapp.com', 'https://i.imgur.com/YNzVDbB.gif', 'JST.B Brand Equity Quiz v2.0', 'React | Node.js | Express | SMTP | Firebase', `Updated an existing web app (A quiz designed to show how well-branded the user's company is) to send an email with a programmatically generated PDF to my client and the quiz taker. Used by prospective clients for JST.B.`, false)}
       {renderProject('https://www.charlottekoreancatholic.org/', 'https://i.imgur.com/zX3ySIU.gif', 'St. John Lee Korean Catholic Church ', 'WordPress | Node.js | MySQL | PHP ', `Migrated existing data and upgraded website for St. John Lee Korean Catholic Church from a Korean CMS to WordPress using Node.js, MySQL, and PHP scripts. Picked theme and plugins to improve functionality from existing site.`, false)}
       {renderProject('http://bookshare-app.herokuapp.com', 'http://i.imgur.com/KiJgkkn.gif', 'BookShare', 'React | Redux | Node.js | AWS S3 | Stripe API', `Similar to eBay, BookShare is an app to store a library of books that you own, put them up for sale, and buy books from other users.`, 'https://github.com/FigsAndRice/BookShare-App')}
