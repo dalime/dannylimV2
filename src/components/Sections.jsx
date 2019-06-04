@@ -3,6 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import Splash from './Splash';
 import About from './About';
 import Experience from './Experience';
+// import Reviews from './Reviews';
 import Skills from './Skills';
 import Projects from './Projects';
 import Connect from './Connect';
@@ -17,7 +18,7 @@ const styles = {
     },
 }
 
-class Base extends Component {
+class Sections extends Component {
     render() {
         return (
             <div style={{ textAlign: 'center', justifyContent: 'space-evenly' }}>
@@ -28,6 +29,9 @@ class Base extends Component {
                 <ScrollableAnchor id={'experience'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Experience />
                 <Divider />
+                {/* <ScrollableAnchor id={'reviews'}><div style={styles.sectionBreak} /></ScrollableAnchor>
+                <Reviews />
+                <Divider /> */}
                 <ScrollableAnchor id={'skills'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Skills />
                 <Divider />
@@ -41,4 +45,4 @@ class Base extends Component {
     }
 };
 
-export default Base;
+export default Sections;

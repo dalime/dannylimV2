@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import Routes from './Routes';
+import Sections from './Sections';
 import NavBar from './NavBar';
 
 class Layout extends Component {
@@ -7,7 +7,7 @@ class Layout extends Component {
         return (
             <Fragment>
                 <NavBar />
-                <Routes />
+                <Sections />
             </Fragment>
         );
     }
