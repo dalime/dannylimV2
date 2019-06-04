@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import withWidth from '@material-ui/core/withWidth';
-import { Parallax } from 'react-parallax';
+// import { Parallax } from 'react-parallax';
 
 const styles = {
     position: "absolute",

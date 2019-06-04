@@ -35,12 +35,12 @@ const SkillsComponent = ({ isVisible, renderSection, renderSkill, width }) => {
         {renderSection('UI Development')}
         {renderSkill('React', 'https://facebook.github.io/react/', ReactLogo)}
         {renderSkill('React Native', 'https://facebook.github.io/react-native/', ReactNativeLogo)}
-        {renderSkill('Redux', 'http://redux.js.org/', ReduxLogo)}
+        {renderSkill('Redux', 'https://redux.js.org/', ReduxLogo)}
         {renderSkill('JavaScript', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', JavaScriptLogo)}
         {renderSkill('Bootstrap', 'https://getbootstrap.com/', BootstrapLogo)}
         {renderSkill('Material UI', 'https://material-ui.com/', MaterialUILogo)}
-        {renderSkill('CSS', 'http://www.w3schools.com/css/css_intro.asp', CSSLogo)}
-        {renderSkill('HTML', 'http://www.w3schools.com/html/html_intro.asp', HTMLLogo)}
+        {renderSkill('CSS', 'https://www.w3schools.com/css/css_intro.asp', CSSLogo)}
+        {renderSkill('HTML', 'https://www.w3schools.com/html/html_intro.asp', HTMLLogo)}
       </Grid>
         
       <Grid container item xs={12} spacing={16}>

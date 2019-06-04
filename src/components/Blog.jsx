@@ -24,7 +24,7 @@ export default class Blog extends Component {
                 {/* <iframe
                     title="blog"
                     style={{position: 'absolute', top: "0px", height: "100vh", width: "100%"}}
-                    src="http://dalime5.wordpress.com/"
+                    src="https://dalime5.wordpress.com/"
                 /> */}
               </div>
             </div>
