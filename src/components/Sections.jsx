@@ -3,7 +3,7 @@ import Divider from '@material-ui/core/Divider';
 import Splash from './Splash';
 import About from './About';
 import Experience from './Experience';
-// import Reviews from './Reviews';
+import Reviews from './Reviews';
 import Skills from './Skills';
 import Projects from './Projects';
 import Connect from './Connect';
@@ -29,9 +29,9 @@ class Sections extends Component {
                 <ScrollableAnchor id={'experience'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Experience />
                 <Divider />
-                {/* <ScrollableAnchor id={'reviews'}><div style={styles.sectionBreak} /></ScrollableAnchor>
+                <ScrollableAnchor id={'reviews'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Reviews />
-                <Divider /> */}
+                <Divider />
                 <ScrollableAnchor id={'skills'}><div style={styles.sectionBreak} /></ScrollableAnchor>
                 <Skills />
                 <Divider />
