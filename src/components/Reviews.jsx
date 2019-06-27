@@ -55,7 +55,7 @@ class ReviewsComponent extends Component {
         <div className="row" style={styles.bottomMargin}>
           {[...Array(rating)].map((e, i) => <Star color="primary" style={{ color: '#00e676' }}/>)}
         </div>
-        <Typography variant="body1" style={{ fontSize: '1.25rem' }}>{text}</Typography>
+        <Typography variant="body1" style={{ fontSize: '1rem' }}>{text}</Typography>
       </div>
     );
   }
