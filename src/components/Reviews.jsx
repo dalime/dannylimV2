@@ -53,7 +53,7 @@ class ReviewsComponent extends Component {
           {title}
         </Typography></a>
         <div className="row" style={styles.bottomMargin}>
-          {[...Array(rating)].map((e, i) => <Star color="primary" style={{ color: '#00e676' }}/>)}
+          {[...Array(rating)].map((e, i) => <Star key={i} color="primary" style={{ color: '#00e676' }}/>)}
         </div>
         <Typography variant="body1" style={{ fontSize: '1rem' }}>{text}</Typography>
       </div>
@@ -67,7 +67,7 @@ class ReviewsComponent extends Component {
     return (
       <div style={styles.root} className={isVisible ? "sectionView" : "section"}>
         <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
-          Social Proof
+          Reviews
         </Typography>
         <Grid container spacing={24}>
           <Grid item xs={2}><IconButton onClick={() => this._slidePrev()}><ArrowBack /></IconButton></Grid>
