@@ -49,6 +49,8 @@ class ReviewsComponent extends Component {
   _renderReview(title, text, rating) {
     return (
       <div>
+        <Typography gutterBottom variant="inherit" className="companyTitle" style={styles.bottomMargin}>
+          {title}
         </Typography>
         <div className="row" style={styles.bottomMargin}>
           {[...Array(rating)].map((e, i) => <Star key={i} color="primary" style={{ color: '#00e676' }}/>)}
