@@ -46,12 +46,10 @@ class ReviewsComponent extends Component {
 
   _slidePrev = () => this.setState({ currentIndex: this.state.currentIndex - 1 })
 
-  _renderReview(title, link, text, rating) {
+  _renderReview(title, text, rating) {
     return (
       <div>
-        <a href={link} alt={title} target="_blank" rel="noopener noreferrer"><Typography gutterBottom variant="inherit" className="companyTitle" style={styles.bottomMargin}>
-          {title}
-        </Typography></a>
+        </Typography>
         <div className="row" style={styles.bottomMargin}>
           {[...Array(rating)].map((e, i) => <Star key={i} color="primary" style={{ color: '#00e676' }}/>)}
         </div>
@@ -83,11 +81,11 @@ class ReviewsComponent extends Component {
               slideToIndex={currentIndex}
               onSlideChanged={this._onSlideChanged}
             >
-              {this._renderReview('React Developer Needed to Update Web App', 'https://jstbquiz.netlify.com', `Danny was very professional and timely. He was quick to respond and understood what I needed. Even on the skype calls, he had positive, insightful feedbacks that were useful to further the project's potential. Overall, I would use Danny again for future projects. Thank you Danny!`, 5)}
-              {this._renderReview('Bilingual Korean-English Wordpress developer/designer needed to update site.', 'https://www.charlottekoreancatholic.org/', `Danny went above and beyond to migrate old site to Wordpress. He clearly communicated project details and implemented additional features on request. Additionally he included quality assurance and an easy handoff process. Will be working with him again.`, 5)}
-              {this._renderReview('WordPress Blog Website', 'https://sidepackstory.com', `Very organized, professional, and fun to work with.`, 5)}
-              {this._renderReview('Need help with WordPress/Woocommerce site', 'https://www.behance.net/gallery/76489741/Common-Trading-Co-Redesign', `I could not be any more happier to had hire Danny Lim for my business project. When I say he went well above and beyond- I mean he REALLY went above and beyond. I was simply looking for a general sketch for my new website but he provided extra analysis, market research, and other business insights... Not to mention, I am VERY satisfied on the new design and how much research was put into the idea... Thank you so much and I will most definitely reach back out to Danny for any of my future website needs!!!`, 5)}
-              {this._renderReview('Website redesign, SEO, and Social Media Marketing.', 'https://venustarsmall.com', `Danny continues to show excellence in his craft!`, 5)}
+              {this._renderReview('React Developer Needed to Update Web App', `Danny was very professional and timely. He was quick to respond and understood what I needed. Even on the skype calls, he had positive, insightful feedbacks that were useful to further the project's potential. Overall, I would use Danny again for future projects. Thank you Danny!`, 5)}
+              {this._renderReview('Bilingual Korean-English Wordpress developer/designer needed to update site.', `Danny went above and beyond to migrate old site to Wordpress. He clearly communicated project details and implemented additional features on request. Additionally he included quality assurance and an easy handoff process. Will be working with him again.`, 5)}
+              {this._renderReview('WordPress Blog Website', `Very organized, professional, and fun to work with.`, 5)}
+              {this._renderReview('Need help with WordPress/Woocommerce site', `I could not be any more happier to had hire Danny Lim for my business project. When I say he went well above and beyond- I mean he REALLY went above and beyond. I was simply looking for a general sketch for my new website but he provided extra analysis, market research, and other business insights... Not to mention, I am VERY satisfied on the new design and how much research was put into the idea... Thank you so much and I will most definitely reach back out to Danny for any of my future website needs!!!`, 5)}
+              {this._renderReview('Website redesign, SEO, and Social Media Marketing.', `Danny continues to show excellence in his craft!`, 5)}
             </AliceCarousel>
             </div>
           </Grid>
