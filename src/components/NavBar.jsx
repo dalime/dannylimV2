@@ -89,6 +89,9 @@ class NavBar extends Component {
                                 <MenuItem onClick={this._push.bind(null, 'experience')} style={{ backgroundColor: '#424242' }}>
                                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'experience')}>Experience</Typography>
                                 </MenuItem>
+                                <MenuItem onClick={this._push.bind(null, 'reviews')} style={{ backgroundColor: '#424242' }}>
+                                    <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'reviews')}>Reviews</Typography>
+                                </MenuItem>
                                 <MenuItem onClick={this._push.bind(null, 'skills')} style={{ backgroundColor: '#424242' }}>
                                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'skills')}>Skills</Typography>
                                 </MenuItem>
@@ -113,6 +116,7 @@ class NavBar extends Component {
                     </Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'about')}>About</Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'experience')}>Experience</Typography>
+                    <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'reviews')}>Reviews</Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'skills')}>Skills</Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'projects')}>Projects</Typography>
                     <Typography className="navbarLink" component="h3" style={styles.menuButton} onClick={this._push.bind(null, 'connect')}>Connect</Typography>
