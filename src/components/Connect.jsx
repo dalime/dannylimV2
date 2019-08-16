@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, PureComponent, Fragment } from 'react';
 import compose from 'recompose/compose';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -60,32 +60,10 @@ const theme = createMuiTheme({
   typography: { useNextVariants: true },
 });
 
-const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress, subject, message, error, errorMessage, success, successMessage, loading, buttonClassname, handleChange, submit, width }) => {
-  return (
-    <div className={isVisible ? "sectionView" : "section"}>
-      <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
-        Let's Work Together
-      </Typography>
-    
-      <div id="hireme">
-        <div id="pph-hireme" className={classes.hireMeObj} />
-        {
-          function(d, s) {
-            var useSSL = 'https:' === document.location.protocol;
-            var where = d.getElementsByTagName(s)[0],
-            js = d.createElement(s);
-            js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
-            try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
-          }(document, 'script')
-        }
-        <div id="upwork-hireme" className={classes.hireMeObj}>
-          <a href={process.env.REACT_APP_UPWORK_LINK} target="_blank" rel="noopener noreferrer" alt="Link to Danny's Upwork Profile">
-            <img src={UpworkBacklink} style={{ width: 250 }} alt="Screenshot of Danny's Upwork Profile handle" />
-            <h3 id="upwork-hireme-text">Hire Me on Upwork</h3>
-          </a>
-        </div>
-      </div>
-
+class ConnectComponent extends PureComponent {
+  render() {
+    const { classes, name, phoneNumber, emailAddress, subject, message, error, errorMessage, success, successMessage, loading, buttonClassname, handleChange, submit, width } = this.props;
+    return (
       <Grid container spacing={24}>
         {success ? (
           <Grid item xs={12}>
@@ -204,9 +182,8 @@ const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress,
           <a href='https://www.behance.net/dalime/' rel="noopener noreferrer" target='_blank'><i className={`fa fa-5x fa-behance-square ${width === 'xs' || width === 'sm' ? 'connectBtnSm' : 'connectBtn'}`} width='100%'></i></a>
         </Grid>
       </Grid>
-      
-    </div>
-  )
+    );
+  }
 };
 
 class Connect extends Component {
@@ -266,24 +243,46 @@ class Connect extends Component {
     return (
       <TrackVisibility offset={width === 'xs' || width === 'sm' ? 1000 : 500}>
         {({ isVisible }) => 
-          <ConnectComponent 
-            isVisible={isVisible} 
-            classes={classes} 
-            name={name} 
-            phoneNumber={phoneNumber} 
-            emailAddress={emailAddress} 
-            subject={subject} 
-            message={message}
-            error={error}
-            errorMessage={errorMessage}
-            success={success}
-            successMessage={successMessage}
-            loading={loading}
-            buttonClassname={buttonClassname}
-            handleChange={this._handleChange}
-            submit={this._submit}
-            width={width}
-          />
+          <div className={isVisible ? "sectionView" : "section"}>
+            <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
+              Let's Work Together
+            </Typography>
+            <div id="hireme">
+              <div id="pph-hireme" className={classes.hireMeObj} />
+              {
+                function(d, s) {
+                  var useSSL = 'https:' === document.location.protocol;
+                  var where = d.getElementsByTagName(s)[0],
+                  js = d.createElement(s);
+                  js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
+                  try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                }(document, 'script')
+              }
+              <div id="upwork-hireme" className={classes.hireMeObj}>
+                <a href={process.env.REACT_APP_UPWORK_LINK} target="_blank" rel="noopener noreferrer" alt="Link to Danny's Upwork Profile">
+                  <img src={UpworkBacklink} style={{ width: 250 }} alt="Screenshot of Danny's Upwork Profile handle" />
+                  <h3 id="upwork-hireme-text">Hire Me on Upwork</h3>
+                </a>
+              </div>
+            </div>
+            <ConnectComponent 
+              classes={classes} 
+              name={name} 
+              phoneNumber={phoneNumber} 
+              emailAddress={emailAddress} 
+              subject={subject} 
+              message={message}
+              error={error}
+              errorMessage={errorMessage}
+              success={success}
+              successMessage={successMessage}
+              loading={loading}
+              buttonClassname={buttonClassname}
+              handleChange={this._handleChange}
+              submit={this._submit}
+              width={width}
+            />
+          </div>
         } 
       </TrackVisibility>
     )
