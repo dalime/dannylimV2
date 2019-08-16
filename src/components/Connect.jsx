@@ -12,6 +12,8 @@ import Typography from '@material-ui/core/Typography';
 import green from '@material-ui/core/colors/green';
 import TrackVisibility from 'react-on-screen';
 
+import { UpworkBacklink } from './PlatformBacklinks';
+
 const styles = theme => ({
   container: {
     display: 'flex',
@@ -45,6 +47,10 @@ const styles = theme => ({
     marginTop: -12,
     marginLeft: -12,
   },
+  hireMeObj: {
+    paddingLeft: '5%',
+    paddingRight: '5%',
+  },
 });
 
 const theme = createMuiTheme({
@@ -60,6 +66,26 @@ const ConnectComponent = ({ isVisible, classes, name, phoneNumber, emailAddress,
       <Typography gutterBottom variant="headline" component="h1" style={{ textAlign: 'center', fontFamily: 'Open Sans, sans-serif', fontSize: width === 'xs' || width === 'sm' ? 30 : 50 }}>
         Let's Work Together
       </Typography>
+    
+      <div id="hireme">
+        <div id="pph-hireme" className={classes.hireMeObj} />
+        {
+          function(d, s) {
+            var useSSL = 'https:' === document.location.protocol;
+            var where = d.getElementsByTagName(s)[0],
+            js = d.createElement(s);
+            js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
+            try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+          }(document, 'script')
+        }
+        <div id="upwork-hireme" className={classes.hireMeObj}>
+          <a href={process.env.REACT_APP_UPWORK_LINK} target="_blank" rel="noopener noreferrer" alt="Link to Danny's Upwork Profile">
+            <img src={UpworkBacklink} style={{ width: 250 }} alt="Screenshot of Danny's Upwork Profile handle" />
+            <h3 id="upwork-hireme-text">Hire Me on Upwork</h3>
+          </a>
+        </div>
+      </div>
+
       <Grid container spacing={24}>
         {success ? (
           <Grid item xs={12}>

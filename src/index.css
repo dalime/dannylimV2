@@ -438,3 +438,24 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
   }
 }
+
+#upwork-hireme-text, #upwork-hireme-text:visited {
+  color: black;
+}
+
+#upwork-hireme-text:hover, #upwork-hireme-text:active {
+  color: #00e676;
+}
+
+#hireme {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  #hireme {
+    flex-direction: column;
+  }
+}
