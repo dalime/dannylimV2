@@ -251,18 +251,18 @@ class Connect extends Component {
               <div id="pph-hireme" className={classes.hireMeObj} />
               {
                 function(d, s) {
-                  var useSSL = 'https:' === document.location.protocol;
-                  var where = d.getElementsByTagName(s)[0],
-                  js = d.createElement(s);
-                  js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=dark&rnd='+parseInt(Math.random()*10000, 10);
-                  try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+                    var useSSL = 'https:' == document.location.protocol;
+                    var where = d.getElementsByTagName(s)[0],
+                    js = d.createElement(s);
+                    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=light&rnd='+parseInt(Math.random()*10000, 10);
+                    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
                 }(document, 'script')
               }
               <div id="upwork-hireme" className={classes.hireMeObj}>
-                <a href={process.env.REACT_APP_UPWORK_LINK} target="_blank" rel="noopener noreferrer" alt="Link to Danny's Upwork Profile">
-                  <img src={UpworkBacklink} style={{ width: 250 }} alt="Screenshot of Danny's Upwork Profile handle" />
-                  <h3 id="upwork-hireme-text">Hire Me on Upwork</h3>
-                </a>
+                <img src={UpworkBacklink} style={{ width: 250 }} alt="Screenshot of Danny's Upwork Profile handle" />
+                <Button variant="text" color="default" style={{ height: '35px', marginTop: '10px', marginBottom: '10px', backgroundColor: '#6fda44', color: 'white', textDecoration: 'none', width: '225px', textTransform: 'capitalize' }} onClick={() => {
+                  window.open(process.env.REACT_APP_UPWORK_LINK, "_blank");
+                }}>Hire Me on Upwork</Button>
               </div>
             </div>
             <ConnectComponent 

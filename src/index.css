@@ -439,12 +439,12 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-#upwork-hireme-text, #upwork-hireme-text:visited {
-  color: black;
-}
-
-#upwork-hireme-text:hover, #upwork-hireme-text:active {
-  color: #00e676;
+#upwork-hireme {
+  border: 1px solid #e6e5e5;
+  height: 100%;
+  padding-top: 2px;
+  width: 250px;
+  text-decoration: none !important;
 }
 
 #hireme {
@@ -452,6 +452,8 @@ h1, h2, h3, h4, h5 {
   flex: 1;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #pph-hireme iframe {
@@ -470,5 +472,11 @@ h1, h2, h3, h4, h5 {
   #hireme {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+  }
+
+  #hireme div {
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 }
