@@ -1,9 +1,4 @@
 body {
-  /* background: url('https://www.heet.org.uk/wp-content/uploads/2016/06/cool-background-picture-super-gradient-270582-1.jpg') no-repeat center center fixed; */
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
   font-family: Roboto, sans-serif;
   height: 100%;
   max-width: 100%;
@@ -24,7 +19,6 @@ body {
 }
 
 .splashContainer {
-  /* display: flex; */
   position: relative;
   justify-content: center;
   align-items: center;
@@ -52,7 +46,7 @@ body {
 }
 
 .splashLogo {
-  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -63,13 +57,10 @@ body {
 }
 
 .splashLogoSm {
-  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
   max-width: 100%;
   height: auto;
   width: auto\9;
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -97,7 +88,6 @@ a:hover {
   animation-name: hi;
   animation-duration: 1s;
   color: #00e676;
-  /* color: #4054b8; */
   text-decoration: none;
   cursor: pointer;
 }
@@ -110,13 +100,11 @@ a:hover {
   animation-name: hi;
   animation-duration: 1s;
   color: #00e676;
-  /* color: #4054b8; */
   cursor: pointer;
 }
 
 .navbar .navbar-toggle {
   background-color: #00e676;
-  /* color: #4054b8; */
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -126,7 +114,11 @@ p {
   color: white;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: white;
 }
 
@@ -135,19 +127,30 @@ h1, h2, h3, h4, h5 {
   from {
     transform: none;
   }
+
   to {
     transform: rotate(180deg);
   }
 }
 
 @keyframes spin {
-  0%  {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);}	
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @-webkit-keyframes spin {
-	0%  {-webkit-transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(360deg);}	
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 .skillLogo {
@@ -225,7 +228,6 @@ h1, h2, h3, h4, h5 {
   animation-name: hi-black;
   animation-duration: 1s;
   color: #00e676;
-  /* color: #4054b8; */
   text-decoration: none;
   text-align: left;
 }
@@ -262,7 +264,6 @@ h1, h2, h3, h4, h5 {
   animation-duration: 1s;
   margin: 20px;
   color: #00e676;
-  /* color: #4054b8; */
 }
 
 .connectBtnSm:hover {
@@ -270,7 +271,6 @@ h1, h2, h3, h4, h5 {
   animation-duration: 1s;
   margin: 10px;
   color: #00e676;
-  /* color: #4054b8; */
 }
 
 .componentIn {
@@ -295,6 +295,7 @@ h1, h2, h3, h4, h5 {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -304,6 +305,7 @@ h1, h2, h3, h4, h5 {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -314,6 +316,7 @@ h1, h2, h3, h4, h5 {
     border: 1px solid white;
     box-shadow: 0 0 0 0 white;
   }
+
   to {
     border: 5px solid #00e676;
     box-shadow: 1px 0 1px 0 white;
@@ -324,6 +327,7 @@ h1, h2, h3, h4, h5 {
   from {
     width: 80%;
   }
+
   to {
     width: 100%;
   }
@@ -333,6 +337,7 @@ h1, h2, h3, h4, h5 {
   from {
     width: 50%;
   }
+
   to {
     width: 70%;
   }
@@ -342,9 +347,9 @@ h1, h2, h3, h4, h5 {
   from {
     color: white;
   }
+
   to {
     color: #00e676;
-    /* color: #4054b8; */
   }
 }
 
@@ -352,9 +357,9 @@ h1, h2, h3, h4, h5 {
   from {
     color: black;
   }
+
   to {
     color: #00e676;
-    /* color: #4054b8; */
   }
 }
 
@@ -362,6 +367,7 @@ h1, h2, h3, h4, h5 {
   from {
     opacity: 0.1;
   }
+
   to {
     opacity: 1;
   }
@@ -383,9 +389,9 @@ h1, h2, h3, h4, h5 {
   from {
     background-color: black;
   }
+
   to {
     background-color: #00e676;
-    /* color: #4054b8; */
   }
 }
 
@@ -411,6 +417,7 @@ h1, h2, h3, h4, h5 {
     border: 1px solid white;
     box-shadow: 0 0 0px 0px white;
   }
+
   to {
     border: 1px solid white;
     box-shadow: 0 0 5px 5px white;
@@ -419,7 +426,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 1440px) {
   .splashLogo {
-    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
     transform: scale(1.3);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -430,7 +437,7 @@ h1, h2, h3, h4, h5 {
 
 @media screen and (max-width: 2736px) {
   .splashLogo {
-    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed; 
+    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
     transform: scale(1.2);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -462,7 +469,7 @@ h1, h2, h3, h4, h5 {
   width: 0px;
 }
 
-#pph-hireme iframe:first-child{
+#pph-hireme iframe:first-child {
   display: block;
   visibility: visible;
   width: 300px;

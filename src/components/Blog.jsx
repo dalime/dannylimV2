@@ -1,23 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Blog extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      component: ''
-    }
+      component: ""
+    };
   }
 
   componentWillMount() {
     // ANIMATION ON MOUNT
-    this.setState({component: 'componentIn'});
+    this.setState({ component: "componentIn" });
   }
 
   render() {
     return (
       <div className={this.state.component}>
-        <div className="container text-left" style={{marginTop: '15%', textAlign: 'left'}}>
+        <div
+          className="container text-left"
+          style={{ marginTop: "15%", textAlign: "left" }}
+        >
           <div className="col-sm-12 col-md-12 col-lg-12">
             <div className="row">
               <div className="col-sm-12 col-md-12 col-lg-12">
@@ -31,6 +34,6 @@ export default class Blog extends Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

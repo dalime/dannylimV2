@@ -1,10 +1,8 @@
 {
-    "apps": [
-        {
-            "name": "dannylim",
-            "script": "npx",
-            "interpreter": "none",
-            "args": "serve -s -p 80 build"
-        }
-    ]
+  "apps": [{
+    "name": "dannylim",
+    "script": "npx",
+    "interpreter": "none",
+    "args": "serve -s -p 80 build"
+  }]
 }
