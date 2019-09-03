@@ -19,7 +19,7 @@ const ProjectsView = ({ isVisible, renderProject, width }) => {
       <Typography
         gutterBottom
         variant="headline"
-        component="h1"
+        component="h2"
         style={{
           textAlign: "center",
           fontFamily: "Open Sans, sans-serif",
@@ -107,7 +107,7 @@ class Projects extends Component {
             <Grid item xs={12} style={{ textAlign: "center" }}>
               <img
                 src={imgUrl}
-                alt=""
+                alt={`Preview of ${title}`}
                 onClick={() => window.open(url)}
                 className="projectImgSm"
               />
@@ -158,7 +158,7 @@ class Projects extends Component {
           <Grid item xs={4} style={{ textAlign: "right" }}>
             <img
               src={imgUrl}
-              alt=""
+              alt={`Preview of ${title}`}
               onClick={() => window.open(url)}
               className="projectImg"
             />

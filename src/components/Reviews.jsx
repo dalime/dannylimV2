@@ -83,14 +83,14 @@ class ReviewsComponent extends Component {
         <Typography
           gutterBottom
           variant="headline"
-          component="h1"
+          component="h2"
           style={{
             textAlign: "center",
             fontFamily: "Open Sans, sans-serif",
             fontSize: width === "xs" || width === "sm" ? 30 : 50
           }}
         >
-          Reviews
+          What Clients Say
         </Typography>
         <Grid container spacing={24}>
           <Grid item xs={2}>

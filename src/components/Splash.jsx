@@ -16,7 +16,7 @@ class Splash extends Component {
       <div className="splashContainer">
         <img
           src="https://i.imgur.com/D5WMo8R.jpg"
-          alt=""
+          alt="Danny at the Grand Canyon"
           className={
             width === "xs" || width === "sm" ? "splashLogoSm" : "splashLogo"
           }
@@ -28,7 +28,7 @@ class Splash extends Component {
           style={styles}
         >
           {" "}
-          Hi, I'm Danny{" "}
+          Danny Lim - Web Developer & Designer {" "}
         </h1>
       </div>
     );

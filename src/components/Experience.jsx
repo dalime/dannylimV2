@@ -34,7 +34,7 @@ const ExperienceComponent = ({
         <Typography
           gutterBottom
           variant="headline"
-          component="h1"
+          component="h2"
           style={{
             textAlign: "center",
             fontFamily: "Open Sans, sans-serif",
