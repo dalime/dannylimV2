@@ -135,6 +135,15 @@ class ReviewsComponent extends Component {
                   `Danny continues to show excellence in his craft!`,
                   5
                 )}
+                {this._renderReview(
+                  "Design a simple timeline UI in React/Bootstrap",
+                  `Danny was great to work with. He gave me exactly what I asked for, even with me changing the spec/design throughout the project. He had a quick turnaround time, and was patient when I took days to respond.
+
+                  And, as a developer who will be using Danny's code, it's well documented and will be easy to integrate with my existing project.
+
+                  I will be definitely hiring Danny in the future.`,
+                  5
+                )}
               </AliceCarousel>
             </div>
           </Grid>
