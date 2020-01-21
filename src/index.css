@@ -451,6 +451,7 @@ h5 {
   height: 100%;
   padding-top: 2px;
   width: 250px;
+  height: 140px;
   text-decoration: none !important;
 }
 
@@ -458,9 +459,27 @@ h5 {
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: -2%;
+}
+
+#hireme-platforms {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#hireme-calendly {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #pph-hireme iframe {
@@ -479,6 +498,23 @@ h5 {
   #hireme {
     flex-direction: column;
     text-align: center;
+    align-items: center;
+    margin-bottom: -5%;
+  }
+
+  #hireme-platforms {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hireme-platforms>div {
+    margin-bottom: 5%;
+  }
+
+  #hireme-calendly {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 

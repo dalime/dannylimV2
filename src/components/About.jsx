@@ -37,8 +37,8 @@ const AboutComponent = ({ isVisible, width }) => {
             <Grid item xs={2}>
               <Avatar
                 className="avatar"
-                src="https://i.imgur.com/EIAwly7.jpg"
-                onClick={() => window.open("https://i.imgur.com/EIAwly7.jpg")}
+                src="https://i.imgur.com/KgMzgsi.jpg"
+                onClick={() => window.open("https://i.imgur.com/KgMzgsi.jpg")}
                 style={{
                   width: width === "xs" || width === "sm" ? 80 : 150,
                   height: width === "xs" || width === "sm" ? 80 : 150,
@@ -65,8 +65,8 @@ const AboutComponent = ({ isVisible, width }) => {
           <Grid item xs={2}>
             <Avatar
               className="avatar"
-              src="https://i.imgur.com/EIAwly7.jpg"
-              onClick={() => window.open("https://i.imgur.com/EIAwly7.jpg")}
+              src="https://i.imgur.com/KgMzgsi.jpg"
+              onClick={() => window.open("https://i.imgur.com/KgMzgsi.jpg")}
               style={{
                 width: width === "xs" || width === "sm" ? 80 : 150,
                 height: width === "xs" || width === "sm" ? 80 : 150,

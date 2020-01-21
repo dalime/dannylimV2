@@ -17,6 +17,7 @@ import green from "@material-ui/core/colors/green";
 import TrackVisibility from "react-on-screen";
 
 import { UpworkBacklink } from "./PlatformBacklinks";
+import CalendlyWidget from "./CalendlyWidget";
 
 const styles = theme => ({
   container: {
@@ -390,7 +391,7 @@ class Connect extends Component {
     });
 
     return (
-      <TrackVisibility offset={width === "xs" || width === "sm" ? 1000 : 500}>
+      <TrackVisibility offset={width === "xs" || width === "sm" ? 2000 : 1000}>
         {({ isVisible }) => (
           <div className={isVisible ? "sectionView" : "section"}>
             <Typography
@@ -406,52 +407,57 @@ class Connect extends Component {
               Let's Work Together
             </Typography>
             <div id="hireme">
-              <div id="pph-hireme" className={classes.hireMeObj} />
-              {(function(d, s) {
-                var useSSL = "https:" === document.location.protocol;
-                var where = d.getElementsByTagName(s)[0],
-                  js = d.createElement(s);
-                js.src =
-                  (useSSL ? "https:" : "http:") +
-                  "//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=light&rnd=" +
-                  parseInt(Math.random() * 10000, 10);
-                try {
-                  where.parentNode.insertBefore(js, where);
-                } catch (e) {
-                  if (
-                    typeof console !== "undefined" &&
-                    console.log &&
-                    e.stack
-                  ) {
-                    console.log(e.stack);
+              <div id="hireme-platforms">
+                <div id="pph-hireme" className={classes.hireMeObj} />
+                {(function(d, s) {
+                  var useSSL = "https:" === document.location.protocol;
+                  var where = d.getElementsByTagName(s)[0],
+                    js = d.createElement(s);
+                  js.src =
+                    (useSSL ? "https:" : "http:") +
+                    "//www.peopleperhour.com/hire/1048807493/2546541.js?width=300&height=135&orientation=vertical&theme=light&rnd=" +
+                    parseInt(Math.random() * 10000, 10);
+                  try {
+                    where.parentNode.insertBefore(js, where);
+                  } catch (e) {
+                    if (
+                      typeof console !== "undefined" &&
+                      console.log &&
+                      e.stack
+                    ) {
+                      console.log(e.stack);
+                    }
                   }
-                }
-              })(document, "script")}
-              <div id="upwork-hireme" className={classes.hireMeObj}>
-                <img
-                  src={UpworkBacklink}
-                  style={{ width: 250 }}
-                  alt="Screenshot of Danny's Upwork Profile handle"
-                />
-                <Button
-                  variant="text"
-                  color="default"
-                  style={{
-                    height: "35px",
-                    marginTop: "10px",
-                    marginBottom: "10px",
-                    backgroundColor: "#6fda44",
-                    color: "white",
-                    textDecoration: "none",
-                    width: "225px",
-                    textTransform: "capitalize"
-                  }}
-                  onClick={() => {
-                    window.open(process.env.REACT_APP_UPWORK_LINK, "_blank");
-                  }}
-                >
-                  Hire Me on Upwork
-                </Button>
+                })(document, "script")}
+                <div id="upwork-hireme" className={classes.hireMeObj}>
+                  <img
+                    src={UpworkBacklink}
+                    style={{ width: 250 }}
+                    alt="Screenshot of Danny's Upwork Profile handle"
+                  />
+                  <Button
+                    variant="text"
+                    color="default"
+                    style={{
+                      height: "35px",
+                      marginTop: "10px",
+                      marginBottom: "10px",
+                      backgroundColor: "#6fda44",
+                      color: "white",
+                      textDecoration: "none",
+                      width: "225px",
+                      textTransform: "capitalize"
+                    }}
+                    onClick={() => {
+                      window.open(process.env.REACT_APP_UPWORK_LINK, "_blank");
+                    }}
+                  >
+                    Hire Me on Upwork
+                  </Button>
+                </div>
+              </div>
+              <div id="hireme-calendly">
+                <CalendlyWidget />
               </div>
             </div>
             <ConnectComponent
@@ -482,7 +488,4 @@ Connect.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default compose(
-  withStyles(styles),
-  withWidth()
-)(Connect);
+export default compose(withStyles(styles), withWidth())(Connect);
