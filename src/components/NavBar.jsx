@@ -17,7 +17,7 @@ const styles = {
     marginRight: 20,
     textTransform: "capitalize",
     textDecoration: "none",
-    color: "white"
+    color: "black"
   }
 };
 
@@ -53,7 +53,7 @@ class NavBar extends Component {
         <AppBar
           position="fixed"
           className="navBar"
-          style={{ backgroundColor: "#424242" }}
+          style={{ backgroundColor: "#FFF" }}
         >
           <Toolbar>
             <IconButton
@@ -62,7 +62,7 @@ class NavBar extends Component {
                 marginRight: 20,
                 textTransform: "capitalize",
                 textDecoration: "none",
-                color: "white",
+                color: "black",
                 float: "right"
               }}
               color="inherit"
@@ -83,7 +83,8 @@ class NavBar extends Component {
                 marginRight: 20,
                 fontFamily: "Open Sans, sans-serif",
                 textTransform: "capitalize",
-                textDecoration: "none"
+                textDecoration: "none",
+                color: "black"
               }}
             >
               Danny Lim
@@ -97,36 +98,10 @@ class NavBar extends Component {
               open={menuOpen}
               onClose={this._toggleMenu}
             >
-              <MenuList style={{ backgroundColor: "#424242" }}>
-                <MenuItem
-                  onClick={this._push.bind(null, "about")}
-                  style={{ backgroundColor: "#424242" }}
-                >
-                  <Typography
-                    className="navbarLink"
-                    component="h3"
-                    style={styles.menuButton}
-                    onClick={this._push.bind(null, "about")}
-                  >
-                    About
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onClick={this._push.bind(null, "experience")}
-                  style={{ backgroundColor: "#424242" }}
-                >
-                  <Typography
-                    className="navbarLink"
-                    component="h3"
-                    style={styles.menuButton}
-                    onClick={this._push.bind(null, "experience")}
-                  >
-                    Experience
-                  </Typography>
-                </MenuItem>
+              <MenuList style={{ backgroundColor: "#FFF" }}>
                 <MenuItem
                   onClick={this._push.bind(null, "reviews")}
-                  style={{ backgroundColor: "#424242" }}
+                  style={{ backgroundColor: "#FFF" }}
                 >
                   <Typography
                     className="navbarLink"
@@ -139,7 +114,7 @@ class NavBar extends Component {
                 </MenuItem>
                 <MenuItem
                   onClick={this._push.bind(null, "skills")}
-                  style={{ backgroundColor: "#424242" }}
+                  style={{ backgroundColor: "#FFF" }}
                 >
                   <Typography
                     className="navbarLink"
@@ -152,7 +127,7 @@ class NavBar extends Component {
                 </MenuItem>
                 <MenuItem
                   onClick={this._push.bind(null, "projects")}
-                  style={{ backgroundColor: "#424242" }}
+                  style={{ backgroundColor: "#FFF" }}
                 >
                   <Typography
                     className="navbarLink"
@@ -165,7 +140,7 @@ class NavBar extends Component {
                 </MenuItem>
                 <MenuItem
                   onClick={this._push.bind(null, "connect")}
-                  style={{ backgroundColor: "#424242" }}
+                  style={{ backgroundColor: "#FFF" }}
                 >
                   <Typography
                     className="navbarLink"
@@ -174,6 +149,32 @@ class NavBar extends Component {
                     onClick={this._push.bind(null, "connect")}
                   >
                     Connect
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={this._push.bind(null, "experience")}
+                  style={{ backgroundColor: "#FFF" }}
+                >
+                  <Typography
+                    className="navbarLink"
+                    component="h3"
+                    style={styles.menuButton}
+                    onClick={this._push.bind(null, "experience")}
+                  >
+                    Experience
+                  </Typography>
+                </MenuItem>
+                <MenuItem
+                  onClick={this._push.bind(null, "about")}
+                  style={{ backgroundColor: "#FFF" }}
+                >
+                  <Typography
+                    className="navbarLink"
+                    component="h3"
+                    style={styles.menuButton}
+                    onClick={this._push.bind(null, "about")}
+                  >
+                    About
                   </Typography>
                 </MenuItem>
               </MenuList>
@@ -187,7 +188,7 @@ class NavBar extends Component {
       <AppBar
         position="fixed"
         className="navBar"
-        style={{ backgroundColor: "#424242" }}
+        style={{ backgroundColor: "#FFF" }}
       >
         <Toolbar>
           <Typography
@@ -199,26 +200,11 @@ class NavBar extends Component {
               marginRight: 20,
               fontFamily: "Open Sans, sans-serif",
               textTransform: "capitalize",
-              textDecoration: "none"
+              textDecoration: "none",
+              color: "black"
             }}
           >
             Danny Lim
-          </Typography>
-          <Typography
-            className="navbarLink"
-            component="h3"
-            style={styles.menuButton}
-            onClick={this._push.bind(null, "about")}
-          >
-            About
-          </Typography>
-          <Typography
-            className="navbarLink"
-            component="h3"
-            style={styles.menuButton}
-            onClick={this._push.bind(null, "experience")}
-          >
-            Experience
           </Typography>
           <Typography
             className="navbarLink"
@@ -251,6 +237,22 @@ class NavBar extends Component {
             onClick={this._push.bind(null, "connect")}
           >
             Connect
+          </Typography>
+          <Typography
+            className="navbarLink"
+            component="h3"
+            style={styles.menuButton}
+            onClick={this._push.bind(null, "experience")}
+          >
+            Experience
+          </Typography>
+          <Typography
+            className="navbarLink"
+            component="h3"
+            style={styles.menuButton}
+            onClick={this._push.bind(null, "about")}
+          >
+            About
           </Typography>
         </Toolbar>
       </AppBar>

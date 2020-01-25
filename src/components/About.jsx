@@ -26,7 +26,7 @@ const AboutComponent = ({ isVisible, width }) => {
             fontSize: 50
           }}
         >
-          Nice to Meet You
+          About
         </Typography>
       )}
       <Grid container spacing={24}>
@@ -57,7 +57,7 @@ const AboutComponent = ({ isVisible, width }) => {
                   fontSize: 30
                 }}
               >
-                Nice to Meet You
+                About
               </Typography>
             </Grid>
           </Fragment>

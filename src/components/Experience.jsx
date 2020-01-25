@@ -41,7 +41,7 @@ const ExperienceComponent = ({
             fontSize: width === "xs" || width === "sm" ? 30 : 50
           }}
         >
-          My Experiences
+          Experience
         </Typography>
         <Typography component="br" />
 
@@ -247,7 +247,4 @@ Experience.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default compose(
-  withStyles(styles),
-  withWidth()
-)(Experience);
+export default compose(withStyles(styles), withWidth())(Experience);

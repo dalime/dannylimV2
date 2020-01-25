@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import withWidth from "@material-ui/core/withWidth";
+import CoverImg from "../images/Cover.jpg";
 
 const styles = {
   position: "absolute",
@@ -15,8 +16,8 @@ class Splash extends Component {
     return (
       <div className="splashContainer">
         <img
-          src="https://i.imgur.com/D5WMo8R.jpg"
-          alt="Danny at the Grand Canyon"
+          src={CoverImg}
+          alt="Modern Desk"
           className={
             width === "xs" || width === "sm" ? "splashLogoSm" : "splashLogo"
           }
@@ -28,7 +29,7 @@ class Splash extends Component {
           style={styles}
         >
           {" "}
-          Danny Lim - Web Developer & Designer {" "}
+          Your Digital Presence Matters.
         </h1>
       </div>
     );

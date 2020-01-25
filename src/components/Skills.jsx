@@ -56,7 +56,7 @@ const SkillsComponent = ({ isVisible, renderSection, renderSkill, width }) => {
           fontSize: width === "xs" || width === "sm" ? 30 : 50
         }}
       >
-        My Skills
+        Skillset
       </Typography>
       <Grid container item xs={12} spacing={16}>
         {renderSection("UI Design")}
@@ -196,7 +196,4 @@ Skills.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default compose(
-  withStyles(styles),
-  withWidth()
-)(Skills);
+export default compose(withStyles(styles), withWidth())(Skills);

@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import Divider from "@material-ui/core/Divider";
 import Splash from "./Splash";
+import ProblemDefinition from "./ProblemDefinition";
+import Package from "./Package";
 import About from "./About";
 import Experience from "./Experience";
 import Reviews from "./Reviews";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Connect from "./Connect";
+import Footer from "./Footer";
 
 import ScrollableAnchor from "react-scrollable-anchor";
 
@@ -23,15 +26,20 @@ class Sections extends Component {
     return (
       <div style={{ textAlign: "center", justifyContent: "space-evenly" }}>
         <Splash />
-        <ScrollableAnchor id={"about"}>
+        <ScrollableAnchor id={"problem"}>
           <div style={styles.sectionBreak} />
         </ScrollableAnchor>
-        <About />
+        <ProblemDefinition />
         <Divider />
-        <ScrollableAnchor id={"experience"}>
+        <ScrollableAnchor id={"package"}>
           <div style={styles.sectionBreak} />
         </ScrollableAnchor>
-        <Experience />
+        <Package />
+        <Divider />
+        <ScrollableAnchor id={"projects"}>
+          <div style={styles.sectionBreak} />
+        </ScrollableAnchor>
+        <Projects />
         <Divider />
         <ScrollableAnchor id={"reviews"}>
           <div style={styles.sectionBreak} />
@@ -43,15 +51,24 @@ class Sections extends Component {
         </ScrollableAnchor>
         <Skills />
         <Divider />
-        <ScrollableAnchor id={"projects"}>
-          <div style={styles.sectionBreak} />
-        </ScrollableAnchor>
-        <Projects />
-        <Divider />
         <ScrollableAnchor id={"connect"}>
+          {/* Remove links to PPH and Upwork links */}
           <div style={styles.sectionBreak} />
         </ScrollableAnchor>
         <Connect />
+        <Divider />
+        <ScrollableAnchor id={"experience"}>
+          <div style={styles.sectionBreak} />
+        </ScrollableAnchor>
+        <Experience />
+        <Divider />
+        <ScrollableAnchor id={"about"}>
+          <div style={styles.sectionBreak} />
+        </ScrollableAnchor>
+        <About />
+        <Divider />
+        <div style={styles.sectionBreak} />
+        <Footer />
       </div>
     );
   }

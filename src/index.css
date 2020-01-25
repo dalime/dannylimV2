@@ -32,8 +32,9 @@ body {
   left: 50%;
   font-family: 'Open Sans', sans-serif;
   font-size: 75px;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
+  color: black;
 }
 
 .splashTextSm {
@@ -44,27 +45,30 @@ body {
   font-size: 30px;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 .splashLogo {
-  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
+  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat left left fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  max-width: 110vw;
+  max-height: 100vh;
 }
 
 .splashLogoSm {
   background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
-  max-width: 100%;
+  max-width: 100vw;
   height: auto;
-  width: auto\9;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100vw;
   background-attachment: fixed;
 }
 
@@ -86,7 +90,7 @@ a {
 }
 
 a:hover {
-  animation-name: hi;
+  animation-name: hi-black;
   animation-duration: 1s;
   color: #00e676;
   text-decoration: none;
@@ -94,11 +98,11 @@ a:hover {
 }
 
 .navbarLink {
-  color: white;
+  color: black;
 }
 
 .navbarLink:hover {
-  animation-name: hi;
+  animation-name: hi-black;
   animation-duration: 1s;
   color: #00e676;
   cursor: pointer;
@@ -523,4 +527,17 @@ h5 {
     margin-top: 2%;
     margin-bottom: 2%;
   }
+}
+
+.btn-link {
+  color: black;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  animation-name: hi-black;
+  animation-duration: 1s;
+  color: #00e676;
+  text-decoration: none;
+  cursor: pointer;
 }
