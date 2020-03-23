@@ -1,122 +1,122 @@
 body {
-  font-family: Roboto, sans-serif;
-  height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+	font-family: Roboto, sans-serif;
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .section {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  opacity: 0.1;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	opacity: 0.1;
 }
 
 .sectionView {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  animation-name: fade-in;
-  animation-duration: 0.5s;
-  opacity: 1;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	animation-name: fade-in;
+	animation-duration: 0.5s;
+	opacity: 1;
 }
 
 .splashContainer {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5%;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5%;
 }
 
 .splashText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 75px;
-  justify-content: right;
-  align-items: right;
-  color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 75px;
+	justify-content: right;
+	align-items: right;
+	color: black;
 }
 
 .splashTextSm {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
-  justify-content: center;
-  align-items: center;
-  color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	justify-content: center;
+	align-items: center;
+	color: black;
 }
 
 .splashLogo {
-  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat left left fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  max-width: 110vw;
-  max-height: 100vh;
+	background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat left left fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	max-width: 110vw;
+	max-height: 100vh;
 }
 
 .splashLogoSm {
-  background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
-  max-width: 100vw;
-  height: auto;
-  width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-attachment: fixed;
+	background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
+	max-width: 100vw;
+	height: auto;
+	width: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100vw;
+	background-attachment: fixed;
 }
 
 #experienceRoot {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .home {
-  width: 50%;
-  height: 100vh;
-  text-align: center;
+	width: 50%;
+	height: 100vh;
+	text-align: center;
 }
 
 a {
-  color: white;
+	color: white;
 }
 
 a:hover {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  text-decoration: none;
-  cursor: pointer;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .navbarLink {
-  color: black;
+	color: black;
 }
 
 .navbarLink:hover {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  cursor: pointer;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	cursor: pointer;
 }
 
 .navbar .navbar-toggle {
-  background-color: #00e676;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+	background-color: #00e676;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
 }
 
 p {
-  color: white;
+	color: white;
 }
 
 h1,
@@ -124,420 +124,471 @@ h2,
 h3,
 h4,
 h5 {
-  color: white;
+	color: white;
 }
 
 
 @keyframes flip {
-  from {
-    transform: none;
-  }
+	from {
+		transform: none;
+	}
 
-  to {
-    transform: rotate(180deg);
-  }
+	to {
+		transform: rotate(180deg);
+	}
 }
 
 @keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
 
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }
 
 @-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
 
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
 }
 
 .skillLogo {
-  width: 200%;
-  align-self: center;
+	width: 200%;
+	align-self: center;
 }
 
 
 .skillLogo:hover {
-  animation: spin 0.4s linear;
-  -webkit-animation: spin 0.4s linear;
-  align-self: center;
+	animation: spin 0.4s linear;
+	-webkit-animation: spin 0.4s linear;
+	align-self: center;
 }
 
 .skillLogo:active {
-  animation: spin 0.4s linear;
-  -webkit-animation: spin 0.4s linear;
-  align-self: center;
+	animation: spin 0.4s linear;
+	-webkit-animation: spin 0.4s linear;
+	align-self: center;
 }
 
 .projectImg {
-  margin: auto;
-  display: block;
-  width: 80%;
-  height: 100%;
-  border: 1px solid black;
+	margin: auto;
+	display: block;
+	width: 80%;
+	height: 100%;
+	border: 1px solid black;
 }
 
 .projectImg:hover {
-  width: 100%;
-  height: 100%;
-  border: 4px solid #00e676;
-  box-shadow: 1px 0 1px 0 white;
-  animation-name: borderGreen, enlargeProject;
-  animation-duration: 1s;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #00e676;
+	box-shadow: 1px 0 1px 0 white;
+	animation-name: borderGreen, enlargeProject;
+	animation-duration: 1s;
 }
 
 .projectImgSm {
-  margin: auto;
-  display: block;
-  width: 50%;
-  border: 1px solid black;
+	margin: auto;
+	display: block;
+	width: 50%;
+	border: 1px solid black;
 }
 
 .projectImgSm:hover {
-  width: 70%;
-  border: 4px solid #00e676;
-  box-shadow: 1px 0 1px 0 white;
-  animation-name: borderGreen, enlargeSmProject;
-  animation-duration: 1s;
+	width: 70%;
+	border: 4px solid #00e676;
+	box-shadow: 1px 0 1px 0 white;
+	animation-name: borderGreen, enlargeSmProject;
+	animation-duration: 1s;
 }
 
 .projectLink {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .projectLink:hover {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  cursor: pointer;
-  text-decoration: none;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .skillLink h4 {
-  color: black;
-  text-decoration: none;
-  text-align: left;
+	color: black;
+	text-decoration: none;
+	text-align: left;
 }
 
 .skillLink:hover h4 {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  text-decoration: none;
-  text-align: left;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	text-decoration: none;
+	text-align: left;
 }
 
 .companyTitle {
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
 }
 
 .companyTitle:hover {
-  font-size: 20px;
-  font-weight: bold;
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  cursor: pointer;
-  text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .connectBtn {
-  color: #212121;
-  margin: 20px;
+	color: #212121;
+	margin: 20px;
 }
 
 .connectBtnSm {
-  color: #212121;
-  margin: 10px;
+	color: #212121;
+	margin: 10px;
 }
 
 .connectBtn:hover {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  margin: 20px;
-  color: #00e676;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	margin: 20px;
+	color: #00e676;
 }
 
 .connectBtnSm:hover {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  margin: 10px;
-  color: #00e676;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	margin: 10px;
+	color: #00e676;
 }
 
 .componentIn {
-  animation-name: fadeIn;
-  animation-duration: 2s;
-  opacity: 1;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	opacity: 1;
 }
 
 .avatar {
-  border: 1px solid white;
-  box-shadow: 0 0 0px 0px white;
+	border: 1px solid white;
+	box-shadow: 0 0 0px 0px white;
 }
 
 .avatar:hover {
-  border: 4px solid #00e676;
-  box-shadow: 1px 0 1px 0 white;
-  animation-name: borderGreen;
-  animation-duration: 1s;
+	border: 4px solid #00e676;
+	box-shadow: 1px 0 1px 0 white;
+	animation-name: borderGreen;
+	animation-duration: 1s;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
+	from {
+		opacity: 0;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 @keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
+	from {
+		opacity: 1;
+	}
 
-  to {
-    opacity: 0;
-  }
+	to {
+		opacity: 0;
+	}
 }
 
 @keyframes borderGreen {
-  from {
-    border: 1px solid white;
-    box-shadow: 0 0 0 0 white;
-  }
+	from {
+		border: 1px solid white;
+		box-shadow: 0 0 0 0 white;
+	}
 
-  to {
-    border: 5px solid #00e676;
-    box-shadow: 1px 0 1px 0 white;
-  }
+	to {
+		border: 5px solid #00e676;
+		box-shadow: 1px 0 1px 0 white;
+	}
 }
 
 @keyframes enlargeProject {
-  from {
-    width: 80%;
-  }
+	from {
+		width: 80%;
+	}
 
-  to {
-    width: 100%;
-  }
+	to {
+		width: 100%;
+	}
 }
 
 @keyframes enlargeSmProject {
-  from {
-    width: 50%;
-  }
+	from {
+		width: 50%;
+	}
 
-  to {
-    width: 70%;
-  }
+	to {
+		width: 70%;
+	}
 }
 
 @keyframes hi {
-  from {
-    color: white;
-  }
+	from {
+		color: white;
+	}
 
-  to {
-    color: #00e676;
-  }
+	to {
+		color: #00e676;
+	}
 }
 
 @keyframes hi-black {
-  from {
-    color: black;
-  }
+	from {
+		color: black;
+	}
 
-  to {
-    color: #00e676;
-  }
+	to {
+		color: #00e676;
+	}
 }
 
 @keyframes fade-in {
-  from {
-    opacity: 0.1;
-  }
+	from {
+		opacity: 0.1;
+	}
 
-  to {
-    opacity: 1;
-  }
+	to {
+		opacity: 1;
+	}
 }
 
 .resumeBtn {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
 }
 
 .resumeBtn:hover {
-  animation-name: resumehi;
-  animation-duration: 1s;
-  background-color: #00e676;
+	animation-name: resumehi;
+	animation-duration: 1s;
+	background-color: #00e676;
 }
 
 @keyframes buttonColor {
-  from {
-    background-color: black;
-  }
+	from {
+		background-color: black;
+	}
 
-  to {
-    background-color: #00e676;
-  }
+	to {
+		background-color: #00e676;
+	}
 }
 
 .paper {
-  width: 100%;
-  margin: 5px;
-  text-align: center;
-  padding: 20px;
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  box-shadow: 0 0 0px 0px white;
+	width: 100%;
+	margin: 5px;
+	text-align: center;
+	padding: 20px;
+	background-color: black;
+	color: white;
+	border: 1px solid white;
+	box-shadow: 0 0 0px 0px white;
 }
 
 .paper:hover {
-  box-shadow: 0 0 5px 5px white;
-  animation-name: highlight;
-  animation-duration: 1s;
+	box-shadow: 0 0 5px 5px white;
+	animation-name: highlight;
+	animation-duration: 1s;
 }
 
 @keyframes highlight {
-  from {
-    border: 1px solid white;
-    box-shadow: 0 0 0px 0px white;
-  }
+	from {
+		border: 1px solid white;
+		box-shadow: 0 0 0px 0px white;
+	}
 
-  to {
-    border: 1px solid white;
-    box-shadow: 0 0 5px 5px white;
-  }
+	to {
+		border: 1px solid white;
+		box-shadow: 0 0 5px 5px white;
+	}
 }
 
 @media screen and (max-width: 1440px) {
-  .splashLogo {
-    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
-    transform: scale(1.3);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+	.splashLogo {
+		background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
+		transform: scale(1.3);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 }
 
 @media screen and (max-width: 2736px) {
-  .splashLogo {
-    background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
-    transform: scale(1.2);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+	.splashLogo {
+		background: url('https://i.imgur.com/NpmjaPC.jpg') no-repeat center center fixed;
+		transform: scale(1.2);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 }
 
 #upwork-hireme {
-  border: 1px solid #e6e5e5;
-  height: 100%;
-  padding-top: 2px;
-  width: 250px;
-  height: 140px;
-  text-decoration: none !important;
+	border: 1px solid #e6e5e5;
+	height: 100%;
+	padding-top: 2px;
+	width: 250px;
+	height: 140px;
+	text-decoration: none !important;
 }
 
 #hireme {
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 5%;
-  margin-bottom: -2%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+	margin-top: 5%;
+	margin-bottom: -2%;
 }
 
 #hireme-platforms {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-right: 5%;
-  margin-left: 5%;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-right: 5%;
+	margin-left: 5%;
 }
 
 #hireme-calendly {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 #pph-hireme iframe {
-  display: none;
-  visibility: hidden;
-  width: 0px;
+	display: none;
+	visibility: hidden;
+	width: 0px;
 }
 
 #pph-hireme iframe:first-child {
-  display: block;
-  visibility: visible;
-  width: 300px;
+	display: block;
+	visibility: visible;
+	width: 300px;
 }
 
 @media screen and (max-width: 767px) {
-  #hireme {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-bottom: -5%;
-  }
+	#hireme {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		margin-bottom: -5%;
+	}
 
-  #hireme-platforms {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	#hireme-platforms {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-  #hireme-platforms>div {
-    margin-bottom: 5%;
-  }
+	#hireme-platforms>div {
+		margin-bottom: 5%;
+	}
 
-  #hireme-calendly {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+	#hireme-calendly {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-  #hireme div {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
+	#hireme div {
+		margin-top: 2%;
+		margin-bottom: 2%;
+	}
 }
 
 .btn-link {
-  color: black;
+	color: black;
 }
 
 .btn-link:hover,
 .btn-link:active {
-  animation-name: hi-black;
-  animation-duration: 1s;
-  color: #00e676;
-  text-decoration: none;
-  cursor: pointer;
+	animation-name: hi-black;
+	animation-duration: 1s;
+	color: #00e676;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.notable-client-container {
+	padding-left: 5px;
+	padding-right: 5px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.notable-client-img {
+	margin: 10px;
+	width: 50%;
+	height: auto;
+}
+
+.notable-client-link {
+	width: 20%;
+	text-align: center;
+}
+
+.notable-client-name {
+	color: black;
+}
+
+@media screen and (max-width: 600px) {
+	.notable-client-container {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+	}
+
+	.notable-client-img {
+		margin: 10px;
+		width: 50%;
+		height: auto;
+	}
+
+	.notable-client-link {
+		width: 50%;
+		text-align: center;
+	}
+
+	.notable-client-name {
+		display: none;
+		visibility: hidden;
+	}
 }
