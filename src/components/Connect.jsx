@@ -85,7 +85,7 @@ class ConnectComponent extends PureComponent {
 			width
 		} = this.props;
 		return (
-			<Grid container spacing={24}>
+			<Grid container>
 				{success ? (
 					<Grid item xs={12}>
 						<Typography

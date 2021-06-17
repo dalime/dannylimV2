@@ -56,7 +56,7 @@ function Footer(props) {
 				</Button>
 			</MuiThemeProvider>
 			<div style={{ marginTop: "10vh" }} />
-			<Grid container spacing={24}>
+			<Grid container>
 				<Grid item xs={3}>
 					<a
 						href="https://dannylim.co/DannyLim_Resume.pdf"
